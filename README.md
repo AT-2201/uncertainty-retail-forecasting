@@ -1,4 +1,4 @@
-# 🌟 uncertainty-retail-forecasting
+# Uncertainty-retail-forecasting
 
 ### *End-to-End Retail Demand Forecasting with Temporal Fusion Transformers (TFT)*
 
@@ -12,12 +12,12 @@ It forecasts daily sales for **500 store--item combinations**, compares
 against classical baselines, and quantifies uncertainty using quantile
 regression.
 
-🎯 **Goal:** Build an industry-level system that helps retailers
+**Goal:** Build an industry-level system that helps retailers
 optimize inventory, reduce stockouts, and plan supply more effectively.
 
 ------------------------------------------------------------------------
 
-# 🔥 Key Features
+# Key Features
 
 ### ✔ Temporal Fusion Transformer (TFT)
 
@@ -50,9 +50,9 @@ For each store--item series: - RMSE\
 
 ------------------------------------------------------------------------
 
-# 📊 Results Summary
+# Results Summary
 
-### 🔹 Performance Comparison (500 SKUs)
+### Performance Comparison (500 SKUs)
 
   Model      Mean RMSE ↓   Median RMSE ↓
   ---------- ------------- ---------------
@@ -61,7 +61,7 @@ For each store--item series: - RMSE\
   Seasonal   20.55         20.40
   **TFT**    **7.95**      **7.59**
 
-### 🏆 Key Insight
+### Key Insight
 
 > **TFT improves accuracy by 32--60% compared to baseline models.**
 
@@ -70,7 +70,7 @@ across all SKUs.
 
 ------------------------------------------------------------------------
 
-# 📈 Example Forecast Visualization
+# Example Forecast Visualization
 
 A single SKU forecast showing uncertainty (p10--p90):
 
@@ -83,7 +83,7 @@ A single SKU forecast showing uncertainty (p10--p90):
 
 ------------------------------------------------------------------------
 
-# 🧠 Modeling Pipeline
+# Modeling Pipeline
 
     Raw Data (store, item, date, sales)
             ↓
@@ -107,7 +107,7 @@ A single SKU forecast showing uncertainty (p10--p90):
 
 ------------------------------------------------------------------------
 
-# 🛠 Tech Stack
+# Tech Stack
 
   Component       Tools
   --------------- ----------------------------
@@ -120,7 +120,7 @@ A single SKU forecast showing uncertainty (p10--p90):
 
 ------------------------------------------------------------------------
 
-# 📁 Project Structure
+# Project Structure
 
     uncertainty-retail-forecasting/
     │
@@ -139,28 +139,28 @@ A single SKU forecast showing uncertainty (p10--p90):
 
 ------------------------------------------------------------------------
 
-# 🚀 How to Run
+# How to Run
 
-### 1️⃣ Install dependencies
+### Install dependencies
 
 ``` bash
 pip install "u8darts[torch]"
 pip install pandas numpy matplotlib scikit-learn
 ```
 
-### 2️⃣ Launch Jupyter
+### Launch Jupyter
 
 ``` bash
 jupyter lab
 ```
 
-### 3️⃣ Run notebooks in order:
+### Run notebooks in order:
 
     01 → 02 → 03 → 04
 
 ------------------------------------------------------------------------
 
-# 📜 Insights & Takeaways
+# Insights & Takeaways
 
 -   Daily retail demand is **noisy**\
 -   Naive performs decently → strong short-term continuity\
